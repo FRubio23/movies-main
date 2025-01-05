@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:movies/screens/favorite_list_screen.dart';
 import 'package:movies/screens/home_screen.dart';
 import 'package:movies/screens/search_screen.dart';
 import 'package:movies/screens/watch_list_screen.dart';
@@ -8,6 +9,7 @@ class BottomNavigatorController extends GetxController {
     HomeScreen(),
     const SearchScreen(),
   const WatchList(),
+    const FavoriteList(),
   ];
   var index = 0.obs;
   void setIndex(indx) => index.value = indx;

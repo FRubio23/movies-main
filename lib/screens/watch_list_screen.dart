@@ -51,7 +51,7 @@ class WatchList extends StatelessWidget {
                         (movie) => Column(
                           children: [
                             GestureDetector(
-                              onTap: () => Get.to(DetailsScreen(movie: movie)),
+                              onTap: () => Get.to(DetailsScreen(item: movie)),
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
@@ -81,7 +81,7 @@ class WatchList extends StatelessWidget {
                                   const SizedBox(
                                     width: 5,
                                   ),
-                                  Infos(movie: movie)
+                                  Infos(item: movie)
                                 ],
                               ),
                             ),
